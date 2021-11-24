@@ -64,9 +64,10 @@ document.cookie = 'kex=1';
 <br>
 <h1 style="font-size:20px;text-align:center;color:yellow;">You Will Experience Insufficient Memory Problems in the Browser (You Must Insist)</h1>
 <div style="text-align:center">
-<button class="btn" onmouseover="mainpayload1()" onmouseout="pagetitle()" onclick=load_goldhen()> GoldHEN v1.1 </button>
-<button class="btn" onmouseover="mainpayload2()" onmouseout="pagetitle()" onclick=load_mira75x()> MIRA 7.5x </button>
-<button class="btn" onmouseover="mainpayload3()" onmouseout="pagetitle()" onclick=load_binloader()> Bin Loader </button>
+<button class="btn" onmouseover="mainpayload1()" onmouseout="pagetitle()" onclick=load_goldhen2()> GoldHEN v2.0b </button>
+<button class="btn" onmouseover="mainpayload2()" onmouseout="pagetitle()" onclick=load_goldhen1()> GoldHEN v1.1 </button>
+<button class="btn" onmouseover="mainpayload3()" onmouseout="pagetitle()" onclick=load_mira75x()> MIRA 7.5x </button>
+<button class="btn" onmouseover="mainpayload4()" onmouseout="pagetitle()" onclick=load_binloader()> Bin Loader </button>
 <br>
 <h1 style="font-size:20px;text-align:center;">Payloads</h1>
 <button class="btn" onmouseover="todex()" onmouseout="pagetitle()" onclick=load_todex()> ToDex </button>
@@ -102,12 +103,15 @@ document.cookie = 'kex=1';
 </div>
 <script>
 function mainpayload1(){
-document.getElementById("msgs").innerHTML = "GoldHEN v1.1 for All Firmwares 7.5x (Includes Temporary Fix for CE-30391-6)";
+document.getElementById("msgs").innerHTML = "GoldHEN v2.0b for All Firmwares 7.5x (Includes Temporary Fix for CE-30391-6)";
 }
 function mainpayload2(){
-document.getElementById("msgs").innerHTML = "MIRA for All Firmwares 7.5x";
+document.getElementById("msgs").innerHTML = "GoldHEN v1.1 for All Firmwares 7.5x (Includes Temporary Fix for CE-30391-6)";
 }
 function mainpayload3(){
+document.getElementById("msgs").innerHTML = "MIRA for All Firmwares 7.5x";
+}
+function mainpayload4(){
 document.getElementById("msgs").innerHTML = "Inject a Payload Using the IP of the console and Port 9021";
 }
 function todex(){
@@ -192,11 +196,18 @@ for(var i=40; i<=79; i++){
 }
 tempC.value=60;
 
-function load_goldhen(){
+function load_goldhen2(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'goldhen.html';
+        link.href = 'goldhen2.0b.html';
+        link.click();
+}
+function load_goldhen1(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'goldhen1.1.html';
         link.click();
 }
 function load_mira75x(){
