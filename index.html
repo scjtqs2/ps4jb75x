@@ -20,8 +20,8 @@ color: white;
 .btn {
 background-color: #003263;
 color: white;
-width: 260px;
-height: 49px;
+width: 257px;
+height: 46px;
 padding-bottom: 5px;
 text-align: center;
 font-size: 20px;
@@ -61,13 +61,14 @@ document.cookie = 'kex=1';
 </head>
 <h1 id=msgs>PS4 7.50 - 7.55 Host v1.5 by GamerHack</h1>
 <hr>
-<br>
 <h1 style="font-size:20px;text-align:center;color:yellow;">You Will Experience Insufficient Memory Problems in the Browser (You Must Insist)</h1>
 <div style="text-align:center">
-<button class="btn" onmouseover="mainpayload1()" onmouseout="pagetitle()" onclick=load_goldhen2()> GoldHEN v2.0b </button>
-<button class="btn" onmouseover="mainpayload2()" onmouseout="pagetitle()" onclick=load_goldhen1()> GoldHEN v1.1 </button>
-<button class="btn" onmouseover="mainpayload3()" onmouseout="pagetitle()" onclick=load_mira75x()> MIRA 7.5x </button>
-<button class="btn" onmouseover="mainpayload4()" onmouseout="pagetitle()" onclick=load_binloader()> Bin Loader </button>
+<button class="btn" onmouseover="mainpayload1()" onmouseout="pagetitle()" onclick=load_goldhen2b2()> GoldHEN v2.0b2 </button>
+<button class="btn" onmouseover="mainpayload2()" onmouseout="pagetitle()" onclick=load_goldhen2b()> GoldHEN v2.0b </button>
+<button class="btn" onmouseover="mainpayload3()" onmouseout="pagetitle()" onclick=load_goldhen1()> GoldHEN v1.1 </button>
+<br>
+<button class="btn" onmouseover="mainpayload4()" onmouseout="pagetitle()" onclick=load_mira75x()> MIRA 7.5x </button>
+<button class="btn" onmouseover="mainpayload5()" onmouseout="pagetitle()" onclick=load_binloader()> Bin Loader </button>
 <br>
 <h1 style="font-size:20px;text-align:center;">Payloads</h1>
 <button class="btn" onmouseover="todex()" onmouseout="pagetitle()" onclick=load_todex()> ToDex </button>
@@ -98,20 +99,22 @@ document.cookie = 'kex=1';
 <button class="btn btn-toolbox" onmouseover="orbistoolbox()" onmouseout="pagetitle()" onclick=load_toolbox()> Orbis-Toolbox </button>
 <button class="btn" onmouseover="webrte()" onmouseout="pagetitle()" onclick=load_webrte()> WebRTE </button>
 <button class="btn btn-web" onmouseover="ps4trainer()" onmouseout="pagetitle()" onclick=load_ps4trainer()> PS4 Trainer Web </button>&nbsp
-<hr style="margin-top: 24px;">
-<h1 style="font-size:25px;text-align:center;margin-top: 15px;color:yellow;">Many Thanks to:&nbsp&nbsp<a href="https://twitter.com/sleirsgoevy" style="color:#f31414;">@sleirsgoevy</a>&nbsp&nbsp<a style="color:white;">ChendoChap</a>&nbsp&nbsp<a href="https://twitter.com/_AlAzif" style="color:#f31414;">@_AlAzif</a>&nbsp&nbsp<a style="color:white;">And to all the people who keep the scene alive day after day</a></h1>
+<h1 style="margin-top: 17px;color:yellow;">Many Thanks to:&nbsp&nbsp<a href="https://twitter.com/sleirsgoevy" style="color:#f31414;">@sleirsgoevy</a>&nbsp&nbsp<a style="color:white;">ChendoChap</a>&nbsp&nbsp<a href="https://twitter.com/_AlAzif" style="color:#f31414;">@_AlAzif</a>&nbsp&nbsp<a style="color:white;">And to all the people who keep the scene alive day after day</a></h1>
 </div>
 <script>
 function mainpayload1(){
-document.getElementById("msgs").innerHTML = "GoldHEN v2.0b for All Firmwares 7.5x (Includes Temporary Fix for CE-30391-6)";
+document.getElementById("msgs").innerHTML = "GoldHEN v2.0b2 for All Firmwares 7.5x (Includes Temporary Fix for CE-30391-6)";
 }
 function mainpayload2(){
-document.getElementById("msgs").innerHTML = "GoldHEN v1.1 for All Firmwares 7.5x (Includes Temporary Fix for CE-30391-6)";
+document.getElementById("msgs").innerHTML = "GoldHEN v2.0b for All Firmwares 7.5x (Includes Temporary Fix for CE-30391-6)";
 }
 function mainpayload3(){
-document.getElementById("msgs").innerHTML = "MIRA for All Firmwares 7.5x";
+document.getElementById("msgs").innerHTML = "GoldHEN v1.1 for All Firmwares 7.5x (Includes Temporary Fix for CE-30391-6)";
 }
 function mainpayload4(){
+document.getElementById("msgs").innerHTML = "MIRA for All Firmwares 7.5x";
+}
+function mainpayload5(){
 document.getElementById("msgs").innerHTML = "Inject a Payload Using the IP of the console and Port 9021";
 }
 function todex(){
@@ -184,7 +187,7 @@ function ps4trainer(){
 document.getElementById("msgs").innerHTML = "PS4 Trainer Website (Follow Instructions There)";
 }
 function pagetitle(){
-document.getElementById("msgs").innerHTML = "PS4 7.50 - 7.55 Host v1.5 by GamerHack";
+document.getElementById("msgs").innerHTML = "PS4 7.50 - 7.55 FW Host v1.5 by GamerHack";
 }
 
 for(var i=40; i<=79; i++){
@@ -196,7 +199,14 @@ for(var i=40; i<=79; i++){
 }
 tempC.value=60;
 
-function load_goldhen2(){
+function load_goldhen2b2(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'goldhen2.0b2.html';
+        link.click();
+}
+function load_goldhen2b(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
