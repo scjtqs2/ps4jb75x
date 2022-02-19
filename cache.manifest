@@ -1,5 +1,4 @@
 CACHE MANIFEST 
-# v1.5
 
 CACHE: 
 app-dumper.js
@@ -13,18 +12,10 @@ enable-updates.js
 fanThreshold.js
 frontend.js
 ftp.js
-goldhen-750.js
-goldhen-751.js
-goldhen-755.js
-goldhen1.1.html
-goldhen2b-750.js
-goldhen2b-751.js
-goldhen2b-755.js
-goldhen2.0b.html
-goldhen2b2-750.js
-goldhen2b2-751.js
-goldhen2b2-755.js
-goldhen2.0b2.html
+goldhen2.1.2.html
+goldhen212-750.js
+goldhen212-751.js
+goldhen212-755.js
 history-blocker.js
 idu.js
 img.jpg
